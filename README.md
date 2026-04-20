@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -13,6 +13,8 @@
       --border: #d0d7de;
       --link: #0969da;
       --link-hover: #0550ae;
+      --active-bg: #0969da;
+      --active-text: #ffffff;
     }
 
     * {
@@ -56,7 +58,7 @@
 
     .language-links a {
       display: inline-block;
-      padding: 8px 12px;
+      padding: 10px 14px;
       border: 1px solid var(--border);
       border-radius: 999px;
       background: #fff;
@@ -64,11 +66,19 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 14px;
+      text-align: center;
+      min-width: 110px;
     }
 
     .language-links a:hover {
       color: var(--link-hover);
       border-color: var(--link-hover);
+    }
+
+    .language-links a.active {
+      background: var(--active-bg);
+      color: var(--active-text);
+      border-color: var(--active-bg);
     }
 
     .intro {
@@ -79,13 +89,17 @@
       margin-bottom: 24px;
     }
 
-    section {
+    .language-section {
+      display: none;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 24px;
       margin-bottom: 24px;
-      scroll-margin-top: 90px;
+    }
+
+    .language-section.active {
+      display: block;
     }
 
     h1 {
@@ -93,6 +107,7 @@
       margin-bottom: 8px;
       font-size: 2rem;
       line-height: 1.2;
+      word-break: break-word;
     }
 
     h2 {
@@ -147,9 +162,22 @@
       }
 
       .intro,
-      section {
+      .language-section {
         padding: 18px;
         border-radius: 12px;
+      }
+
+      .language-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .language-links a {
+        min-width: 0;
+        width: 100%;
+        font-size: 13px;
+        padding: 10px 12px;
       }
 
       h1 {
@@ -159,19 +187,35 @@
       h2 {
         font-size: 1.3rem;
       }
+
+      body {
+        line-height: 1.6;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .language-links {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <a id="top"></a>
-
   <div class="container">
     <nav class="language-nav" aria-label="Sprachauswahl">
       <div class="language-links">
-        <a href="#deutsch">Deutsch</a>
-        <a href="#english">English</a>
-        <a href="#espanol">Español</a>
-        <a href="#francais">Français</a>
+        <a href="#deutsch" data-lang-link="deutsch" class="active">Deutsch</a>
+        <a href="#english" data-lang-link="english">English</a>
+        <a href="#espanol" data-lang-link="espanol">Español</a>
+        <a href="#francais" data-lang-link="francais">Français</a>
       </div>
     </nav>
 
@@ -181,7 +225,7 @@
       <p>Wählen Sie oben Ihre Sprache aus.</p>
     </div>
 
-    <section id="deutsch" lang="de">
+    <section id="deutsch" class="language-section active" lang="de">
       <h2>Deutsch</h2>
       <p class="updated"><strong>Stand: März 2026</strong></p>
 
@@ -229,11 +273,9 @@
       <p>
         Änderungen dieser Datenschutzerklärung teilen wir in der App mit.
       </p>
-
-      <a class="back-top" href="#top">Nach oben</a>
     </section>
 
-    <section id="english" lang="en">
+    <section id="english" class="language-section" lang="en">
       <h2>English</h2>
       <p class="updated"><strong>Last updated: March 2026</strong></p>
 
@@ -282,11 +324,9 @@
       <p>
         Any changes to this privacy policy will be communicated within the app.
       </p>
-
-      <a class="back-top" href="#top">Back to top</a>
     </section>
 
-    <section id="espanol" lang="es">
+    <section id="espanol" class="language-section" lang="es">
       <h2>Español</h2>
       <p class="updated"><strong>Última actualización: marzo de 2026</strong></p>
 
@@ -337,11 +377,9 @@
       <p>
         Cualquier cambio en esta política de privacidad se comunicará dentro de la aplicación.
       </p>
-
-      <a class="back-top" href="#top">Volver arriba</a>
     </section>
 
-    <section id="francais" lang="fr">
+    <section id="francais" class="language-section" lang="fr">
       <h2>Français</h2>
       <p class="updated"><strong>Dernière mise à jour : mars 2026</strong></p>
 
@@ -392,9 +430,41 @@
       <p>
         Toute modification de cette politique de confidentialité sera communiquée dans l’application.
       </p>
-
-      <a class="back-top" href="#top">Retour en haut</a>
     </section>
   </div>
+
+  <script>
+    const sections = document.querySelectorAll('.language-section');
+    const links = document.querySelectorAll('[data-lang-link]');
+
+    function showLanguage(lang) {
+      const target = document.getElementById(lang) ? lang : 'deutsch';
+
+      sections.forEach(section => {
+        section.classList.toggle('active', section.id === target);
+      });
+
+      links.forEach(link => {
+        link.classList.toggle('active', link.dataset.langLink === target);
+      });
+
+      document.documentElement.lang = target === 'deutsch'
+        ? 'de'
+        : target === 'english'
+        ? 'en'
+        : target === 'espanol'
+        ? 'es'
+        : 'fr';
+    }
+
+    function handleHash() {
+      const lang = window.location.hash.replace('#', '') || 'deutsch';
+      showLanguage(lang);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('hashchange', handleHash);
+    window.addEventListener('DOMContentLoaded', handleHash);
+  </script>
 </body>
-</html> 
+</html>

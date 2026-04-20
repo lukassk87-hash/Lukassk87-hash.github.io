@@ -1,13 +1,14 @@
 # Lukassk87-hash.github.io
-Datenschutzerklärung 
-Datenschutzerklärung für alle meine Apps. 
+Datenschutzerklärung
 
-Stand: März 2025
+Datenschutzerklärung für Stopmotion VideoCreator. 
+
+Stand: März 2026
 
 Der Anbieter dieser App Lukas Schulze König (lukas@schulzekoenig.de) nimmt den Datenschutz ernst.
 
 1. Erhobene Daten
-Wir erheben, speichern und verarbeiten **keine personenbezogenen Daten**. Die App dient rein lokal auf Ihrem Gerät und sendet keine Informationen an Server, Dritte oder Dienste [web:8].
+Wir erheben, speichern und verarbeiten **keine personenbezogenen Daten**. Die App dient rein lokal auf Ihrem Gerät und sendet keine Informationen an Server, Dritte oder Dienste.
 
 2. Kein Tracking oder Werbung
 - Keine Analyse-Tools (z. B. Google Analytics).

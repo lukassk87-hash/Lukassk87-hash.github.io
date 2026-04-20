@@ -17,7 +17,9 @@
       --active-text: #ffffff;
     }
 
-    * {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
     }
 
@@ -25,18 +27,34 @@
       scroll-behavior: smooth;
     }
 
+    html,
     body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      line-height: 1.65;
+      line-height: 1.6;
       background: var(--bg);
       color: var(--text);
     }
 
     .container {
-      max-width: 960px;
+      width: 100%;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 24px 16px 56px;
+      padding: 12px;
+    }
+
+    .language-nav,
+    .intro,
+    .language-section {
+      width: 100%;
+      max-width: 100%;
     }
 
     .language-nav {
@@ -46,19 +64,21 @@
       background: rgba(247, 247, 248, 0.96);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
-      padding: 14px 0;
-      margin-bottom: 24px;
+      padding: 10px 0;
+      margin-bottom: 12px;
     }
 
     .language-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
     }
 
     .language-links a {
-      display: inline-block;
-      padding: 10px 14px;
+      display: block;
+      width: 100%;
+      min-width: 0;
+      padding: 10px 12px;
       border: 1px solid var(--border);
       border-radius: 999px;
       background: #fff;
@@ -67,7 +87,8 @@
       font-weight: 700;
       font-size: 14px;
       text-align: center;
-      min-width: 110px;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
 
     .language-links a:hover {
@@ -81,54 +102,58 @@
       border-color: var(--active-bg);
     }
 
-    .intro {
+    .intro,
+    .language-section {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 24px;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
     }
 
     .language-section {
       display: none;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 24px;
     }
 
     .language-section.active {
       display: block;
     }
 
-    h1 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 2rem;
-      line-height: 1.2;
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    a,
+    strong {
+      overflow-wrap: anywhere;
       word-break: break-word;
     }
 
-    h2 {
-      margin-top: 0;
-      margin-bottom: 8px;
+    h1 {
+      margin: 0 0 8px;
       font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
       line-height: 1.25;
     }
 
     h3 {
-      margin-top: 24px;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
+      margin: 20px 0 8px;
+      font-size: 1rem;
+      line-height: 1.35;
     }
 
     p {
-      margin: 0 0 14px;
+      margin: 0 0 12px;
     }
 
     ul {
-      margin: 0 0 14px 20px;
+      margin: 0 0 12px 18px;
       padding: 0;
     }
 
@@ -138,7 +163,7 @@
 
     .updated {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     a {
@@ -149,61 +174,28 @@
       color: var(--link-hover);
     }
 
-    .back-top {
-      display: inline-block;
-      margin-top: 16px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    @media (max-width: 640px) {
+    @media (min-width: 641px) {
       .container {
-        padding: 16px 12px 40px;
+        padding: 16px;
       }
 
       .intro,
       .language-section {
-        padding: 18px;
-        border-radius: 12px;
-      }
-
-      .language-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-      }
-
-      .language-links a {
-        min-width: 0;
-        width: 100%;
-        font-size: 13px;
-        padding: 10px 12px;
+        padding: 22px;
       }
 
       h1 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
       }
 
       h2 {
-        font-size: 1.3rem;
-      }
-
-      body {
-        line-height: 1.6;
+        font-size: 1.45rem;
       }
     }
 
-    @media (max-width: 420px) {
+    @media (min-width: 700px) {
       .language-links {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      h2 {
-        font-size: 1.2rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
     }
   </style>
@@ -220,7 +212,7 @@
     </nav>
 
     <div class="intro">
-      <h1>Stopmotion VideoCreator</h1>
+      <h1>StopMotion VideoCreator</h1>
       <p class="updated">Datenschutzerklärung / Privacy Policy / Política de privacidad / Politique de confidentialité</p>
       <p>Wählen Sie oben Ihre Sprache aus.</p>
     </div>
@@ -437,34 +429,52 @@
     const sections = document.querySelectorAll('.language-section');
     const links = document.querySelectorAll('[data-lang-link]');
 
+    function normalizeLang(hash) {
+      const lang = (hash || '').replace('#', '').trim().toLowerCase();
+      const valid = ['deutsch', 'english', 'espanol', 'francais'];
+      return valid.includes(lang) ? lang : 'deutsch';
+    }
+
+    function applyHtmlLang(lang) {
+      const map = {
+        deutsch: 'de',
+        english: 'en',
+        espanol: 'es',
+        francais: 'fr'
+      };
+      document.documentElement.lang = map[lang] || 'de';
+    }
+
     function showLanguage(lang) {
-      const target = document.getElementById(lang) ? lang : 'deutsch';
+      const current = normalizeLang(lang);
 
       sections.forEach(section => {
-        section.classList.toggle('active', section.id === target);
+        section.classList.toggle('active', section.id === current);
       });
 
       links.forEach(link => {
-        link.classList.toggle('active', link.dataset.langLink === target);
+        const isActive = link.dataset.langLink === current;
+        link.classList.toggle('active', isActive);
+        link.setAttribute('aria-current', isActive ? 'page' : 'false');
       });
 
-      document.documentElement.lang = target === 'deutsch'
-        ? 'de'
-        : target === 'english'
-        ? 'en'
-        : target === 'espanol'
-        ? 'es'
-        : 'fr';
+      applyHtmlLang(current);
     }
 
-    function handleHash() {
-      const lang = window.location.hash.replace('#', '') || 'deutsch';
-      showLanguage(lang);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    function syncFromHash() {
+      showLanguage(window.location.hash);
+      window.scrollTo(0, 0);
     }
 
-    window.addEventListener('hashchange', handleHash);
-    window.addEventListener('DOMContentLoaded', handleHash);
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        const lang = link.dataset.langLink || 'deutsch';
+        showLanguage(lang);
+      });
+    });
+
+    window.addEventListener('hashchange', syncFromHash);
+    window.addEventListener('DOMContentLoaded', syncFromHash);
   </script>
 </body>
 </html>

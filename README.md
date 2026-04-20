@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -212,9 +212,9 @@
     </nav>
 
     <div class="intro">
-      <h1>StopMotion VideoCreator</h1>
-      <p class="updated">Datenschutzerklärung / Privacy Policy / Política de privacidad / Politique de confidentialité</p>
-      <p>Wählen Sie oben Ihre Sprache aus.</p>
+      <h1 id="intro-title">StopMotion VideoCreator</h1>
+      <p id="intro-subtitle" class="updated">Datenschutzerklärung / Privacy Policy / Política de privacidad / Politique de confidentialité</p>
+      <p id="intro-text">Wählen Sie oben Ihre Sprache aus.</p>
     </div>
 
     <section id="deutsch" class="language-section active" lang="de">
@@ -429,20 +429,50 @@
     const sections = document.querySelectorAll('.language-section');
     const links = document.querySelectorAll('[data-lang-link]');
 
+    const introContent = {
+      deutsch: {
+        htmlLang: 'de',
+        pageTitle: 'Datenschutzerklärung - StopMotion VideoCreator',
+        introTitle: 'StopMotion VideoCreator',
+        introSubtitle: 'Datenschutzerklärung',
+        introText: 'Wählen Sie oben Ihre Sprache aus.'
+      },
+      english: {
+        htmlLang: 'en',
+        pageTitle: 'Privacy Policy - StopMotion VideoCreator',
+        introTitle: 'StopMotion VideoCreator',
+        introSubtitle: 'Privacy Policy',
+        introText: 'Select your language above.'
+      },
+      espanol: {
+        htmlLang: 'es',
+        pageTitle: 'Política de privacidad - StopMotion VideoCreator',
+        introTitle: 'StopMotion VideoCreator',
+        introSubtitle: 'Política de privacidad',
+        introText: 'Seleccione su idioma arriba.'
+      },
+      francais: {
+        htmlLang: 'fr',
+        pageTitle: 'Politique de confidentialité - StopMotion VideoCreator',
+        introTitle: 'StopMotion VideoCreator',
+        introSubtitle: 'Politique de confidentialité',
+        introText: 'Sélectionnez votre langue ci-dessus.'
+      }
+    };
+
     function normalizeLang(hash) {
       const lang = (hash || '').replace('#', '').trim().toLowerCase();
       const valid = ['deutsch', 'english', 'espanol', 'francais'];
       return valid.includes(lang) ? lang : 'deutsch';
     }
 
-    function applyHtmlLang(lang) {
-      const map = {
-        deutsch: 'de',
-        english: 'en',
-        espanol: 'es',
-        francais: 'fr'
-      };
-      document.documentElement.lang = map[lang] || 'de';
+    function updateIntro(lang) {
+      const content = introContent[lang] || introContent.deutsch;
+      document.documentElement.lang = content.htmlLang;
+      document.title = content.pageTitle;
+      document.getElementById('intro-title').textContent = content.introTitle;
+      document.getElementById('intro-subtitle').textContent = content.introSubtitle;
+      document.getElementById('intro-text').textContent = content.introText;
     }
 
     function showLanguage(lang) {
@@ -458,7 +488,7 @@
         link.setAttribute('aria-current', isActive ? 'page' : 'false');
       });
 
-      applyHtmlLang(current);
+      updateIntro(current);
     }
 
     function syncFromHash() {

@@ -212,7 +212,7 @@
     </nav>
 
     <div class="intro">
-      <h1 id="intro-title">StopMotion VideoCreator</h1>
+      <h1 id="intro-title">Stop Motion Video Creator</h1>
       <p id="intro-subtitle" class="updated">Datenschutzerklärung / Privacy Policy / Política de privacidad / Politique de confidentialité</p>
       <p id="intro-text">Wählen Sie oben Ihre Sprache aus.</p>
     </div>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datenschutzerklärung - StopMotion VideoCreator</title>
+  <title>Datenschutzerklärung - Stop Motion Video Creator</title>
   <style>
     :root {
       --bg: #f7f7f8;
@@ -222,7 +222,7 @@
       <p class="updated"><strong>Stand: März 2026</strong></p>
 
       <p>
-        Der Anbieter dieser App (StopMotion VideoCreator), Lukas Schulze König
+        Der Anbieter dieser App (Stop Motion Video Creator), Lukas Schulze König
         (<a href="mailto:lukas@schulzekoenig.de">lukas@schulzekoenig.de</a>),
         nimmt den Datenschutz ernst.
       </p>
@@ -272,7 +272,7 @@
       <p class="updated"><strong>Last updated: March 2026</strong></p>
 
       <p>
-        The provider of this app (StopMotion VideoCreator), Lukas Schulze König
+        The provider of this app (Stop Motion Video Creator), Lukas Schulze König
         (<a href="mailto:lukas@schulzekoenig.de">lukas@schulzekoenig.de</a>),
         takes data protection seriously.
       </p>
@@ -323,7 +323,7 @@
       <p class="updated"><strong>Última actualización: marzo de 2026</strong></p>
 
       <p>
-        El proveedor de esta aplicación (StopMotion VideoCreator), Lukas Schulze König
+        El proveedor de esta aplicación (Stop Motion Video Creator), Lukas Schulze König
         (<a href="mailto:lukas@schulzekoenig.de">lukas@schulzekoenig.de</a>),
         se toma muy en serio la protección de datos.
       </p>
@@ -376,7 +376,7 @@
       <p class="updated"><strong>Dernière mise à jour : mars 2026</strong></p>
 
       <p>
-        Le fournisseur de cette application (StopMotion VideoCreator), Lukas Schulze König
+        Le fournisseur de cette application (Stop Motion Video Creator), Lukas Schulze König
         (<a href="mailto:lukas@schulzekoenig.de">lukas@schulzekoenig.de</a>),
         accorde une grande importance à la protection des données.
       </p>

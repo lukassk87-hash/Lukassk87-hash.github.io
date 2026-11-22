@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datenschutzerklärung - Stop Motion Video Creator &amp; Siedlung - Aufbauspiel</title>
+  <title>Datenschutzerklärung - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten</title>
   <style>
     :root {
       --bg: #f7f7f8;
@@ -226,7 +226,7 @@
     </nav>
 
     <div class="intro">
-      <h1 id="intro-title">Stop Motion Video Creator &amp; Siedlung - Aufbauspiel</h1>
+      <h1 id="intro-title">Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten</h1>
       <p id="intro-subtitle" class="updated">Datenschutzerklärung / Privacy Policy / Política de privacidad / Politique de confidentialité</p>
       <p id="intro-text">Wählen Sie oben Ihre Sprache aus.</p>
     </div>
@@ -243,7 +243,7 @@
       </p>
       <ul>
         <li><strong>Stop Motion Video Creator</strong></li>
-        <li><strong>Siedlung - Aufbauspiel</strong></li>
+        <li><strong>RedCastle - gefährliche Zeiten</strong></li>
       </ul>
 
       <hr class="app-divider" />
@@ -270,8 +270,8 @@
 
       <hr class="app-divider" />
 
-      <!-- App 2: Siedlung - Aufbauspiel -->
-      <h3>2. Siedlung - Aufbauspiel</h3>
+      <!-- App 2: RedCastle - gefährliche Zeiten -->
+      <h3>2. RedCastle - gefährliche Zeiten</h3>
 
       <h4>2.1 Erhobene Daten</h4>
       <p>
@@ -339,7 +339,7 @@
       </p>
       <ul>
         <li><strong>Stop Motion Video Creator</strong></li>
-        <li><strong>Siedlung - Aufbauspiel</strong></li>
+        <li><strong>RedCastle - gefährliche Zeiten</strong></li>
       </ul>
 
       <hr class="app-divider" />
@@ -366,8 +366,8 @@
 
       <hr class="app-divider" />
 
-      <!-- App 2: Siedlung - Aufbauspiel -->
-      <h3>2. Siedlung - Aufbauspiel</h3>
+      <!-- App 2: RedCastle - gefährliche Zeiten -->
+      <h3>2. RedCastle - gefährliche Zeiten</h3>
 
       <h4>2.1 Data collected</h4>
       <p>
@@ -436,7 +436,7 @@
       </p>
       <ul>
         <li><strong>Stop Motion Video Creator</strong></li>
-        <li><strong>Siedlung - Aufbauspiel</strong></li>
+        <li><strong>RedCastle - gefährliche Zeiten</strong></li>
       </ul>
 
       <hr class="app-divider" />
@@ -464,8 +464,8 @@
 
       <hr class="app-divider" />
 
-      <!-- App 2: Siedlung - Aufbauspiel -->
-      <h3>2. Siedlung - Aufbauspiel</h3>
+      <!-- App 2: RedCastle - gefährliche Zeiten -->
+      <h3>2. RedCastle - gefährliche Zeiten</h3>
 
       <h4>2.1 Datos recopilados</h4>
       <p>
@@ -537,7 +537,7 @@
       </p>
       <ul>
         <li><strong>Stop Motion Video Creator</strong></li>
-        <li><strong>Siedlung - Aufbauspiel</strong></li>
+        <li><strong>RedCastle - gefährliche Zeiten</strong></li>
       </ul>
 
       <hr class="app-divider" />
@@ -565,8 +565,8 @@
 
       <hr class="app-divider" />
 
-      <!-- App 2: Siedlung - Aufbauspiel -->
-      <h3>2. Siedlung - Aufbauspiel</h3>
+      <!-- App 2: RedCastle - gefährliche Zeiten -->
+      <h3>2. RedCastle - gefährliche Zeiten</h3>
 
       <h4>2.1 Données collectées</h4>
       <p>
@@ -633,29 +633,29 @@
     const introContent = {
       deutsch: {
         htmlLang: 'de',
-        pageTitle: 'Datenschutzerklärung - Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
-        introTitle: 'Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
+        pageTitle: 'Datenschutzerklärung - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
+        introTitle: 'Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
         introSubtitle: 'Datenschutzerklärung',
         introText: 'Wählen Sie oben Ihre Sprache aus.'
       },
       english: {
         htmlLang: 'en',
-        pageTitle: 'Privacy Policy - Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
-        introTitle: 'Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
+        pageTitle: 'Privacy Policy - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
+        introTitle: 'Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
         introSubtitle: 'Privacy Policy',
         introText: 'Select your language above.'
       },
       espanol: {
         htmlLang: 'es',
-        pageTitle: 'Política de privacidad - Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
-        introTitle: 'Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
+        pageTitle: 'Política de privacidad - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
+        introTitle: 'Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
         introSubtitle: 'Política de privacidad',
         introText: 'Seleccione su idioma arriba.'
       },
       francais: {
         htmlLang: 'fr',
-        pageTitle: 'Politique de confidentialité - Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
-        introTitle: 'Stop Motion Video Creator &amp; Siedlung - Aufbauspiel',
+        pageTitle: 'Politique de confidentialité - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
+        introTitle: 'Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
         introSubtitle: 'Politique de confidentialité',
         introText: 'Sélectionnez votre langue ci-dessus.'
       }

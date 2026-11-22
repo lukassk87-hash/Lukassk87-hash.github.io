@@ -339,7 +339,7 @@
       </p>
       <ul>
         <li><strong>Stop Motion Video Creator</strong></li>
-        <li><strong>RedCastle - gefährliche Zeiten</strong></li>
+        <li><strong>RedCastle - Dangerous Times</strong></li>
       </ul>
 
       <hr class="app-divider" />
@@ -366,8 +366,8 @@
 
       <hr class="app-divider" />
 
-      <!-- App 2: RedCastle - gefährliche Zeiten -->
-      <h3>2. RedCastle - gefährliche Zeiten</h3>
+      <!-- App 2: RedCastle - Dangerous Times -->
+      <h3>2. RedCastle - Dangerous Times</h3>
 
       <h4>2.1 Data collected</h4>
       <p>
@@ -436,7 +436,7 @@
       </p>
       <ul>
         <li><strong>Stop Motion Video Creator</strong></li>
-        <li><strong>RedCastle - gefährliche Zeiten</strong></li>
+        <li><strong>RedCastle - Tiempos peligrosos</strong></li>
       </ul>
 
       <hr class="app-divider" />
@@ -464,8 +464,8 @@
 
       <hr class="app-divider" />
 
-      <!-- App 2: RedCastle - gefährliche Zeiten -->
-      <h3>2. RedCastle - gefährliche Zeiten</h3>
+      <!-- App 2: RedCastle - Tiempos peligrosos -->
+      <h3>2. RedCastle - Tiempos peligrosos</h3>
 
       <h4>2.1 Datos recopilados</h4>
       <p>
@@ -537,7 +537,7 @@
       </p>
       <ul>
         <li><strong>Stop Motion Video Creator</strong></li>
-        <li><strong>RedCastle - gefährliche Zeiten</strong></li>
+        <li><strong>RedCastle - Temps dangereux</strong></li>
       </ul>
 
       <hr class="app-divider" />
@@ -565,8 +565,8 @@
 
       <hr class="app-divider" />
 
-      <!-- App 2: RedCastle - gefährliche Zeiten -->
-      <h3>2. RedCastle - gefährliche Zeiten</h3>
+      <!-- App 2: RedCastle - Temps dangereux -->
+      <h3>2. RedCastle - Temps dangereux</h3>
 
       <h4>2.1 Données collectées</h4>
       <p>
@@ -640,22 +640,22 @@
       },
       english: {
         htmlLang: 'en',
-        pageTitle: 'Privacy Policy - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
-        introTitle: 'Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
+        pageTitle: 'Privacy Policy - Stop Motion Video Creator &amp; RedCastle - Dangerous Times',
+        introTitle: 'Stop Motion Video Creator &amp; RedCastle - Dangerous Times',
         introSubtitle: 'Privacy Policy',
         introText: 'Select your language above.'
       },
       espanol: {
         htmlLang: 'es',
-        pageTitle: 'Política de privacidad - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
-        introTitle: 'Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
+        pageTitle: 'Política de privacidad - Stop Motion Video Creator &amp; RedCastle - Tiempos peligrosos',
+        introTitle: 'Stop Motion Video Creator &amp; RedCastle - Tiempos peligrosos',
         introSubtitle: 'Política de privacidad',
         introText: 'Seleccione su idioma arriba.'
       },
       francais: {
         htmlLang: 'fr',
-        pageTitle: 'Politique de confidentialité - Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
-        introTitle: 'Stop Motion Video Creator &amp; RedCastle - gefährliche Zeiten',
+        pageTitle: 'Politique de confidentialité - Stop Motion Video Creator &amp; RedCastle - Temps dangereux',
+        introTitle: 'Stop Motion Video Creator &amp; RedCastle - Temps dangereux',
         introSubtitle: 'Politique de confidentialité',
         introText: 'Sélectionnez votre langue ci-dessus.'
       }
